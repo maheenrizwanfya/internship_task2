@@ -12,7 +12,12 @@ public class main {
         stockMarket.addStock(new Stock("MSFT", "Microsoft", 4824.4));
         stockMarket.addStock(new Stock("WMT", "Walmart", 8567.2));
 
-        User user = new User("Maheen", 100000);
+        System.out.println("Enter name: ");
+        String name = input.nextLine();
+        System.out.println("Enter your current balance: ");
+        Double balance = input.nextDouble();
+        input.nextLine(); // consumption of the line
+        User user = new User(name, balance);
 
         // making the platform
         boolean running = true;
